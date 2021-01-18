@@ -65,20 +65,17 @@ public interface SubUserClient {
   /**
    * Transfer to sub-user
    * @param request
-   * @return
    */
   long transferSubuser(TransferSubuserRequest request);
 
   /**
    * Get sub-user's account balance
    * @param subuserId
-   * @return
    */
   List<AccountBalance> getSubuserAccountBalance(Long subuserId);
 
   /**
    * Get the aggregated balance of all sub-accounts of the current user.
-   * @return
    */
   List<SubuserAggregateBalance> getSubuserAggregateBalance();
 

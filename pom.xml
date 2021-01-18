@@ -3,11 +3,44 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
   <groupId>com.github.qi4coder</groupId>
   <artifactId>huobi-client</artifactId>
-  <version>2.0.3-SNAPSHOT</version>
+  <version>2.0.0</version>
+  <packaging>jar</packaging>
   <description>this project is forked from https://github.com/HuobiRDCenter/huobi_Java and upload to the maven central.</description>
+
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <url>https://github.com/qi4coder/huobi_sdk</url>
+    <connection>https://github.com/qi4coder/huobi_sdk.git</connection>
+    <developerConnection>https://github.com/qi4coder/huobi_sdk</developerConnection>
+  </scm>
+  <developers>
+    <developer>
+      <name>qi4coder</name>
+    </developer>
+  </developers>
+  <distributionManagement>
+    <repository>
+      <id>sonatype-nexus-snapshots</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+    <snapshotRepository>
+      <id>sonatype-nexus-snapshots</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </snapshotRepository>
+  </distributionManagement>
 
   <properties>
     <java.version>1.8</java.version>

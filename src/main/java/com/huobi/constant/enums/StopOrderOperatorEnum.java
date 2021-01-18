@@ -8,7 +8,7 @@ import lombok.Getter;
 @Getter
 public enum StopOrderOperatorEnum {
   /**
-   * GTE,greater than and equal (>=) ,LTE  less than and equal (<=)
+   * GTE,greater than and equal,LTE  less than and equal
    */
   GTE("gte","greater than and equal (>=)"),
   LTE("lte","less than and equal (<=)");

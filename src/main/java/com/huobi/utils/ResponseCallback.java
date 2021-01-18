@@ -13,7 +13,7 @@ public interface ResponseCallback<T> {
 
   /**
    * Be called when the request successful.
-   *
+   * @param response
    */
   void onResponse(T response);
 }

@@ -10,7 +10,6 @@ public class GoogleAuthHelper {
   /**
    * 防止生成重复安全码
    * @param list      已生成的安全码
-   * @return
    */
   public static String getRepetitionKeyStr(List<String> list) {
     AtomicInteger integer = new AtomicInteger(0);
@@ -26,7 +25,6 @@ public class GoogleAuthHelper {
 
   /**
    * 获得为用户随机生成的安全码
-   * @return
    */
   public static String getKeyStr() {
     GoogleAuthenticator gAuth  = new GoogleAuthenticator();
@@ -40,7 +38,6 @@ public class GoogleAuthHelper {
    * 判断输入的验证码是否符合
    * @param key        安全码
    * @param password   验证码,根据时间来生成的验证码
-   * @return
    */
   public static boolean isPattern(String key,int password) {
     GoogleAuthenticator gAuth = new GoogleAuthenticator();
@@ -53,7 +50,6 @@ public class GoogleAuthHelper {
   /**
    * 获得TOTF算法生成的验证码,根据时间产生
    * @param secretKey   安全码
-   * @return
    */
   public static int getVercodeTime(String secretKey) {
     GoogleAuthenticator gAuth = new GoogleAuthenticator();

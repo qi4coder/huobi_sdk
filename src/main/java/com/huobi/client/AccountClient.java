@@ -32,14 +32,12 @@ public interface AccountClient {
 
   /**
    * Get User Account List
-   * @return
    */
   List<Account> getAccounts();
 
   /**
    * Get User Account Balance
    * @param request
-   * @return
    */
   AccountBalance getAccountBalance(AccountBalanceRequest request);
 
